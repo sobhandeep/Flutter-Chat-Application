@@ -80,10 +80,10 @@ void main() async {
   //show_user();
   // create_socket(ip, port);
 
-  runApp(JarvisChat());
+  runApp(ChatCraft());
 }
 
-class JarvisChat extends StatelessWidget {
+class ChatCraft extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -694,7 +694,7 @@ class Change_Password_Page extends State<Change_password> {
       Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => Indivisual_Chat_Page(id: "jarvis")));
+              builder: (context) => Indivisual_Chat_Page(id: "chatcraft")));
     } else {
       Fluttertoast.showToast(
           msg: "Password and confirm password should be same",
@@ -1084,7 +1084,7 @@ class Change_Username_Page extends State<Change_username> {
       Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => Indivisual_Chat_Page(id: "jarvis")));
+              builder: (context) => Indivisual_Chat_Page(id: "chatcraft")));
     } else {
       Fluttertoast.showToast(
           msg: "Username and confirm username should be same",
@@ -1269,7 +1269,7 @@ class NavBar extends StatelessWidget {
             onTap: () {
               socket.close();
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => JarvisChat()));
+                  MaterialPageRoute(builder: (context) => ChatCraft()));
             },
           ),
           ListTile(
